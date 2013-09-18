@@ -70,7 +70,7 @@ module Qiniu
         @async_ops = opts[:async_ops]
         @end_user = opts[:end_user]
         @expires = opts[:expires] || 3600
-        @save_key = save_key
+        @save_key = opts[:save_key]
       end
       # @endgist
 
