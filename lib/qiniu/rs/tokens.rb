@@ -91,7 +91,7 @@ module Qiniu
         params[:returnBody] = @return_body unless @return_body.nil?
         params[:asyncOps] = @async_ops unless @async_ops.nil?
         params[:endUser] = 1 if @escape == 1 || @escape == true
-        params[:saveKey] = @save_key
+        params[:saveKey] = @save_key unless @save_key.nil?
         return params.to_json
       end
 
